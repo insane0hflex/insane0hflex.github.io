@@ -1,7 +1,17 @@
 <html lang="en">
 <head>
     <title>about insane0hflex/svaalbard</title>
-    <link rel="stylesheet" href="css/skeleton.css">
+
+    <style>
+        .container {
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        .clear {
+            clear:both;
+        }
+    </style>
 </head>
 <body style="margin: 0;">
 
@@ -11,7 +21,7 @@
 
     <div class="container">
 
-        <div class="eight columns">
+        <div style="width:71%;float:left;">
 
             <div class="row">
                 <h4>About me</h4>
@@ -70,31 +80,55 @@
         </div>
 
 
-        <div class="four columns" style="background-color:#EEEEEE; padding:20px;">
-            <h5>My GitHub Projects</h5>
-            <hr />
-            <ul>
-                <li><a href="https://github.com/insane0hflex/GameSettingsConfigurator" target="_blank">Game Settings Configurator</a></li>
-                <li><a href="https://github.com/insane0hflex/moddingforge-skyrim" target="_blank">Modding Forge: Skyrim</a></li>
-                <li><a href="https://github.com/insane0hflex/Fallout-4-Modding-Guide" target="_blank">Fallout 4 Modding Guide</a></li>
-            </ul>
-
-            <hr />
-
-            <h5>Fallout 4 Mods</h5>
-            <ul>
-                <li><a href="http://www.nexusmods.com/fallout4/mods/190/?" target="_blank">Fallout 4 Ultimate Tweak Tool</a></li>
-            </ul>
-
-            <hr />
-
-
+        <div style="width:22%;float:left;background-color:#EEEEEE; margin:10px; padding:10px;">
+            <div id="sidebar">
+                <!-- populated via javascript for quick and dirty consistent sidebar templating -->
+            </div>
         </div>
 
 
     </div>
 
-    <footer style="text-align:center;background-color:#eeeeee;margin-top:50px;padding-top:10px;">&copy; insane0hflex 2016</footer>
+    <footer style="clear:both;margin-top:100px;text-align:center;">&copy; insane0hflex 2016</footer>
+
+<script>
+//way of abstracting out sidebar consitency across my user page - its ugly and hacky and not performance friendly
+//I did not want to introduce more overhead than really necessary (like a whole framework like Angular or React)
+//so this script is fine for building out the sidebar.
+
+var sidebarDiv = document.getElementById("sidebar");
+
+var sidebarHTMLBuilder = "";
+
+sidebarHTMLBuilder += "<h5>My GitHub Projects</h5>";
+sidebarHTMLBuilder += "<hr />";
+sidebarHTMLBuilder += "<ul>";
+sidebarHTMLBuilder += "<li><a href='https://github.com/insane0hflex/GameSettingsConfigurator' target='_blank'>Game Settings Configurator</a></li>";
+sidebarHTMLBuilder += "<li><a href='https://github.com/insane0hflex/moddingforge-skyrim' target='_blank'>Modding Forge: Skyrim</a></li>";
+sidebarHTMLBuilder += "<li><a href='https://github.com/insane0hflex/Fallout-4-Modding-Guide' target='_blank'>Fallout 4 Modding Guide</a></li>";
+sidebarHTMLBuilder += "</ul>";
+
+sidebarHTMLBuilder += "<h5>My Mods</h5>";
+sidebarHTMLBuilder += "<hr />";
+sidebarHTMLBuilder += "<ul>";
+sidebarHTMLBuilder += "<li><a href='http://www.nexusmods.com/fallout4/mods/190/?' target='_blank'>Fallout 4 Ultimate Tweak Tool</a></li>";
+sidebarHTMLBuilder += "</ul>";
+
+sidebarHTMLBuilder += "<hr />";
+sidebarHTMLBuilder += "<h5>My Blog Posts</h5>";
+sidebarHTMLBuilder += "<ul>";
+sidebarHTMLBuilder += "<li><a href='' target='_blank'>2016 - A Year of A 'Git-Commit a Day'</a></li>";
+sidebarHTMLBuilder += "<li><a href='' target='_blank'>Unity 2D Platformer Progress Report - January 2016</a></li>";
+sidebarHTMLBuilder += "<li><a href='' target='_blank'>Thoughts on Paid Modding (Skyrim/Fallout 4)</a></li>";
+sidebarHTMLBuilder += "</ul>";
+
+
+sidebarDiv.innerHTML = sidebarHTMLBuilder;
+
+
+
+</script>
+
 </body>
 </html>
 
