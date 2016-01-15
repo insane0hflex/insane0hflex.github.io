@@ -1,20 +1,29 @@
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fallout 4 Modding Guide - Home">
+    <meta name="author" content="svaalbard">
+    <link rel="icon" href="favicon.ico">
     <title>about insane0hflex/svaalbard</title>
 
     <style>
         body {
             font-family: Verdana, Arial, sans-serif;
         }
+
         .container {
             margin: 0 auto;
             max-width: 960px;
         }
+
         .row {
             margin: 20px 0;
         }
+
         .clear {
-            clear:both;
+            clear: both;
         }
     </style>
 </head>
@@ -23,7 +32,7 @@
     <div style="background-color:dodgerblue;margin-bottom:30px;padding-top:20px;padding-bottom:10px;">
         <h3 style="color:orange;text-align:center;">insane0hflex.github.io</h3>
     </div>
-    
+
     <div class="clear"></div>
 
     <div class="container">
@@ -38,13 +47,13 @@
                 </p>
 
                 <hr />
-            
+
             </div>
 
             <div class="row">
                 <h2>My Main GitHub Projects</h2>
 
-                <h4><a href="https://github.com/insane0hflex/GameSettingsConfigurator" target="_blank">Game Settings Configurator</a></h5>
+                <h4><a href="https://github.com/insane0hflex/GameSettingsConfigurator" target="_blank">Game Settings Configurator</a></h4>
 
                 <p>
                     A skeleton project for others to develop a Windows Presentation Framework application to manipulate/edit the .ini settings for a game. See a completed version of the GameSettingsConfigurator that I developed here: <a href="http://www.nexusmods.com/fallout4/mods/190/?" target="_blank">Fallout 4 Ultimate Tweak Tool</a>.
@@ -70,9 +79,9 @@
                 <h4>Main Interests/Hobbies</h4>
                 <ul>
                     <li>Modding Games - Skyrim, Fallout4, etc</li>
-                    <li>Photoshop</li>
+                    <li>Photoshop and Photography</li>
                     <li>Full stack web development - I like front-end, back-end, services, etc</li>
-                    <li>Creating simple games in Unity (C#)</li>
+                    <li>Creating simple games in Unity</li>
                 </ul>
 
                 <h4>Programming Interests</h4>
@@ -98,44 +107,62 @@
 
     <footer style="clear:both;margin-top:100px;text-align:center;">&copy; insane0hflex 2016</footer>
 
-<script>
-//way of abstracting out sidebar consitency across my user page - its ugly and hacky and not performance friendly
-//I did not want to introduce more overhead than really necessary (like a whole framework like Angular or React)
-//so this script is fine for building out the sidebar.
+    <script>
+        //way of abstracting out sidebar to be consistent across my all of user pages (mainly for blogs) - its ugly and hacky and not performance friendly
+        //I did not want to introduce more overhead than really necessary (like a whole to do the sidebar templating better)
+        //so this script is fine for building out the sidebar.
 
-var sidebarDiv = document.getElementById("sidebar");
+        var sidebarDiv = document.getElementById("sidebar");
 
-var sidebarHTMLBuilder = "";
+        var sidebarHTMLBuilder = "";
 
-sidebarHTMLBuilder += "<h4>My GitHub Projects</h4>";
-sidebarHTMLBuilder += "<hr />";
-sidebarHTMLBuilder += "<ul>";
-sidebarHTMLBuilder += "<li><a href='https://github.com/insane0hflex/GameSettingsConfigurator' target='_blank'>Game Settings Configurator</a></li>";
-sidebarHTMLBuilder += "<li><a href='https://github.com/insane0hflex/moddingforge-skyrim' target='_blank'>Modding Forge: Skyrim</a></li>";
-sidebarHTMLBuilder += "<li><a href='https://github.com/insane0hflex/Fallout-4-Modding-Guide' target='_blank'>Fallout 4 Modding Guide</a></li>";
-sidebarHTMLBuilder += "</ul>";
+        sidebarHTMLBuilder += "<h4>My GitHub Projects</h4>";
+        sidebarHTMLBuilder += "<hr />";
+        sidebarHTMLBuilder += "<ul>";
+        sidebarHTMLBuilder += "<li><a href='https://github.com/insane0hflex/GameSettingsConfigurator' target='_blank'>Game Settings Configurator</a></li>";
+        sidebarHTMLBuilder += "<li><a href='https://github.com/insane0hflex/moddingforge-skyrim' target='_blank'>Modding Forge: Skyrim</a></li>";
+        sidebarHTMLBuilder += "<li><a href='https://github.com/insane0hflex/Fallout-4-Modding-Guide' target='_blank'>Fallout 4 Modding Guide</a></li>";
+        sidebarHTMLBuilder += "</ul>";
 
-sidebarHTMLBuilder += "<h4>My Mods</h4>";
-sidebarHTMLBuilder += "<hr />";
-sidebarHTMLBuilder += "<ul>";
-sidebarHTMLBuilder += "<li><a href='http://www.nexusmods.com/fallout4/mods/190/?' target='_blank'>Fallout 4 Ultimate Tweak Tool</a></li>";
-sidebarHTMLBuilder += "</ul>";
+        sidebarHTMLBuilder += "<h4>My Mods</h4>";
+        sidebarHTMLBuilder += "<hr />";
+        sidebarHTMLBuilder += "<ul>";
+        sidebarHTMLBuilder += "<li><a href='http://www.nexusmods.com/fallout4/mods/190/?' target='_blank'>Fallout 4 Ultimate Tweak Tool</a></li>";
+        sidebarHTMLBuilder += "</ul>";
 
-sidebarHTMLBuilder += "<hr />";
-sidebarHTMLBuilder += "<h3>My Blog Posts</h3>";
-sidebarHTMLBuilder += "<ul>";
-sidebarHTMLBuilder += "<li><a href='' target='_blank'>2016 - A Year of A 'Git-Commit a Day'</a></li>";
-sidebarHTMLBuilder += "<li><a href='' target='_blank'>Unity 2D Platformer Progress Report - January 2016</a></li>";
-sidebarHTMLBuilder += "<li><a href='' target='_blank'>Thoughts on Paid Modding (Skyrim/Fallout 4)</a></li>";
-sidebarHTMLBuilder += "</ul>";
-
-
-sidebarDiv.innerHTML = sidebarHTMLBuilder;
+        sidebarHTMLBuilder += "<hr />";
+        sidebarHTMLBuilder += "<h3>My Blog Posts</h3>";
+        sidebarHTMLBuilder += "<ul>";
+        sidebarHTMLBuilder += "<li><a href='' >2016 - A Year of A 'Git-Commit a Day'</a></li>";
+        sidebarHTMLBuilder += "<li><a href='' >Unity 2D Platformer Progress Report - January 2016</a></li>";
+        sidebarHTMLBuilder += "<li><a href='' >Thoughts on Paid Modding (Skyrim/Fallout 4)</a></li>";
+        sidebarHTMLBuilder += "</ul>";
 
 
+        sidebarDiv.innerHTML = sidebarHTMLBuilder;
 
-</script>
+
+        //Loop through this and build sidebar instead? maybe abstract away into a portable microservice/framework/package for node?
+        var buildHTMLFromJSON =
+            {
+                myGitHubProjects: [
+                    {
+                        tagStart: "<h4>Header</h4><ul>",
+                        link: "<li><a href=''>Link Name</a></li>",
+                        tagEnd: "</ul><hr />"
+                    }
+                ],
+                myMods: [
+                    {
+                        tagStart: "<h4>Header</h4><ul>",
+                        link: "<li><a href=''>Link Name</a></li>",
+                        tagEnd: "</ul><hr />"
+                    }
+                ]
+
+            };
+
+    </script>
 
 </body>
 </html>
-
