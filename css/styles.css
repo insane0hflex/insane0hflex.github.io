@@ -5,6 +5,18 @@ body {
     font-family: Verdana, Arial, sans-serif;
 }
 
+header {
+    background-color: dodgerblue;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+header > h1 {
+        color: orange;
+        text-align: center;
+    }
+
 .container {
     margin: 0 auto;
     max-width: 960px;
@@ -23,5 +35,5 @@ footer {
     margin-top: 40px;
     padding: 20px 0;
     text-align: center;
-    background-color: seagreen;
+    /*background-color: seagreen;*/
 }

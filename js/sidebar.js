@@ -21,9 +21,7 @@ sidebarHTMLBuilder += "<h4>My GitHub Projects</h4>"
              + "<hr />"
              + "<h3>My Blog Posts</h3>"
              + "<ul>"
-             + "<li><a href='' >2016 - A Year of A 'Git-Commit a Day'</a></li>"
-             + "<li><a href='' >Unity 2D Platformer Progress Report - January 2016</a></li>"
-             + "<li><a href='' >Thoughts on Paid Modding (Skyrim/Fallout 4)</a></li>"
+             + "<li><a href='http://insane0hflex.github.io/a-commit-a-day-2016.html' >2016 - A Year of A 'Git-Commit a Day'</a></li>"
              + "</ul>"; //Last line
 
 
