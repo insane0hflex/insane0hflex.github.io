@@ -1,4 +1,4 @@
-<html lang="en">
+﻿<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +8,20 @@
     <link rel="icon" href="favicon.ico">
     <title>about insane0hflex/svaalbard</title>
 
-    <style>
-        body {
-            font-family: Verdana, Arial, sans-serif;
-        }
+    <link href="css/styles.css" rel="stylesheet" />
 
-        .container {
-            margin: 0 auto;
-            max-width: 960px;
-        }
-
-        .row {
-            margin: 20px 0;
-        }
-
-        .clear {
-            clear: both;
-        }
-    </style>
 </head>
 <body style="margin: 0;">
 
     <div style="background-color:dodgerblue;margin-bottom:30px;padding-top:20px;padding-bottom:10px;">
-        <h3 style="color:orange;text-align:center;">insane0hflex.github.io</h3>
+        <h1 style="color:orange;text-align:center;">insane0hflex.github.io</h1>
     </div>
 
     <div class="clear"></div>
 
     <div class="container">
 
-        <div style="width:71%;float:left;">
+        <div style="width:71%;float:left;margin-right:2%;">
 
             <div class="row">
                 <h2>About me</h2>
@@ -105,62 +89,11 @@
 
     </div>
 
-    <footer style="clear:both;margin-top:100px;text-align:center;">&copy; insane0hflex 2016</footer>
+    <div class="clear"></div>
 
-    <script>
-        //way of abstracting out sidebar to be consistent across my all of user pages (mainly for blogs) - its ugly and hacky and not performance friendly
-        //I did not want to introduce more overhead than really necessary (like a whole to do the sidebar templating better)
-        //so this script is fine for building out the sidebar.
+    <footer>&copy; insane0hflex 2016</footer>
 
-        var sidebarDiv = document.getElementById("sidebar");
-
-        var sidebarHTMLBuilder = "";
-
-        sidebarHTMLBuilder += "<h4>My GitHub Projects</h4>"
-                     + "<hr />"
-                     + "<ul>"
-                     + "<li><a href='https://github.com/insane0hflex/GameSettingsConfigurator' target='_blank'>Game Settings Configurator</a></li>"
-                     + "<li><a href='https://github.com/insane0hflex/moddingforge-skyrim' target='_blank'>Modding Forge: Skyrim</a></li>"
-                     + "<li><a href='https://github.com/insane0hflex/Fallout-4-Modding-Guide' target='_blank'>Fallout 4 Modding Guide</a></li>"
-                     + "</ul>"
-                     + "<h4>My Mods</h4>"
-                     + "<hr />"
-                     + "<ul>"
-                     + "<li><a href='http://www.nexusmods.com/fallout4/mods/190/?' target='_blank'>Fallout 4 Ultimate Tweak Tool</a></li>"
-                     + "</ul>"
-                     + "<hr />"
-                     + "<h3>My Blog Posts</h3>"
-                     + "<ul>"
-                     + "<li><a href='' >2016 - A Year of A 'Git-Commit a Day'</a></li>"
-                     + "<li><a href='' >Unity 2D Platformer Progress Report - January 2016</a></li>"
-                     + "<li><a href='' >Thoughts on Paid Modding (Skyrim/Fallout 4)</a></li>"
-                     + "</ul>";
-
-
-        sidebarDiv.innerHTML = sidebarHTMLBuilder;
-
-
-        //Loop through this and build sidebar instead? maybe abstract away into a portable microservice/framework/package for node?
-        var buildHTMLFromJSON =
-            {
-                myGitHubProjects: [
-                    {
-                        tagStart: "<h4>Header</h4><ul>",
-                        link: "<li><a href=''>Link Name</a></li>",
-                        tagEnd: "</ul><hr />"
-                    }
-                ],
-                myMods: [
-                    {
-                        tagStart: "<h4>Header</h4><ul>",
-                        link: "<li><a href=''>Link Name</a></li>",
-                        tagEnd: "</ul><hr />"
-                    }
-                ]
-
-            };
-
-    </script>
+    <script src="js/sidebar.js"></script>
 
 </body>
 </html>

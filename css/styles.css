@@ -1,0 +1,27 @@
+﻿/* put spartan css in here sometime */
+
+body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.row {
+    margin: 20px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    clear: both;
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: seagreen;
+}
