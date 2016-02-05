@@ -22,7 +22,8 @@ sidebarHTMLBuilder += "<h4>My GitHub Projects</h4>"
              + "<hr />"
              + "<h3>My Blog Posts</h3>"
              + "<ul>"
-             + "<li><a href='http://insane0hflex.github.io/a-commit-a-day-2016.html' >2016 - A Year of A 'Git-Commit a Day'</a></li>"
+             + "<li><a href='https://insane0hflex.github.io/a-commit-a-day-2016.html' >2016 - A Year of A 'Git-Commit a Day'</a></li>"
+             + "<li><a href='https://insane0hflex.github.io/lorem-ipsum-visual-studio-code-snippet.html'>Lorem Ipsum Visual Studio Code Snippet</a>"
              + "</ul>"; //Last line
 
 
