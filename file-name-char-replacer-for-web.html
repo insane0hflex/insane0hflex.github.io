@@ -1,0 +1,36 @@
+
+Save this as a VBS file (.vbs)
+
+<pre>
+' This script will replace the spaces in a file's name with underscrores.
+' To change the folder, edit the folderName variable with the wanted folder's
+' location. Or use the InputBox (code line commented)
+' to create a window with to enter the desired file path / directory
+
+dim fileSystem, folderName, folder, fileCollection, regEx, renamedFile
+
+set fileSystem = CreateObject("Scripting.FileSystemObject")
+
+' hardcoded filepath becuase this is a dedicated folder ONLY for replacing file names
+folderName = "C:\replaceSpaces"
+
+set folder = fileSystem.GetFolder(folderName)
+set fileCollection = folder.Files
+set regEx = new RegExp
+    regEx.Pattern = "[,'()]" ' characters to replace = comma,left and right parenthesis
+    regEx.Global = true
+
+' replace [,'()] characters with nothing (empty string)
+for each objFile in fileCollection
+    renamedFile = regEx.Replace(objFile.Name, "") 
+    fileSystem.MoveFile objFile, folderName & "\" & renamedFile
+next 
+
+' this is the pattern to replace spaces and underscores with a hyphen
+regEx.Pattern = "[ _]" 
+
+for each objFile in fileCollection
+    renamedFile = regEx.Replace(objFile.Name, "-") 
+    fileSystem.MoveFile objFile, folderName & "\" & renamedFile
+next 
+</pre>
