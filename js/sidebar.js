@@ -1,4 +1,4 @@
-﻿//way of abstracting out sidebar to be consistent across my all of user pages (mainly for blogs) - its ugly and hacky
+//way of abstracting out sidebar to be consistent across my all of user pages (mainly for blogs) - its ugly and hacky
 //I did not want to introduce more overhead than really necessary (like a whole library/framework just to do the sidebar templating better)
 //so this script is fine for building out the sidebar.
 
@@ -6,12 +6,20 @@ var sidebarDiv = document.getElementById("sidebar");
 
 var sidebarHTMLBuilder = "";
 
+//ToDo: rebuild with js element appending
+// like so
+//var firstname = document.getElementById('firstname').value;
+//var entry = document.createElement('li');
+//entry.appendChild(document.createTextNode(firstname));
+//list.appendChild(entry);
+
 sidebarHTMLBuilder += "<h4>My GitHub Projects</h4>"
              + "<hr />"
              + "<ul>"
-             + "<li><a href='https://github.com/insane0hflex/GameSettingsConfigurator' target='_blank'>Game Settings Configurator</a></li>"
              + "<li><a href='https://github.com/insane0hflex/moddingforge-skyrim' target='_blank'>Modding Forge: Skyrim</a></li>"
              + "<li><a href='https://github.com/insane0hflex/Fallout-4-Modding-Guide' target='_blank'>Fallout 4 Modding Guide</a></li>"
+             + "<li><a href='https://github.com/insane0hflex/DarkSouls3SaveGameBackupTool' target='_blank'>Dark Souls 3 Save Game Backup Tool</a></li>"
+             + "<li><a href='https://github.com/insane0hflex/GameSettingsConfigurator' target='_blank'>Game Settings Configurator</a></li>"
              + "</ul>"
              + "<h4>My Mods</h4>"
              + "<hr />"
