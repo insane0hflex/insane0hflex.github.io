@@ -1,11 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="blog of insane0hflex aka svaalbard">
+    <meta name="author" content="svaalbard">
+    <link rel="icon" href="favicon.ico">
+    <title>File Name Character Replace for Web</title>
 
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">insane0hflex.github.io</a></h1>
+    </header>
+    
+    <div class="clear"></div>
+
+    <div class="container">
+
+        <div style="width:71%;float:left;margin-right:2%;">
+
+            <div class="row">
+                
+                <p>
+This script will replace the spaces in a file's name with underscrores.
+To change the folder, edit the folderName variable with the wanted folder's
+location. Or use the InputBox (code line commented)
+to create a window with to enter the desired file path / directory .
+                </p>
+                
+                
 Save this as a VBS file (.vbs)
 
 <pre>
-' This script will replace the spaces in a file's name with underscrores.
-' To change the folder, edit the folderName variable with the wanted folder's
-' location. Or use the InputBox (code line commented)
-' to create a window with to enter the desired file path / directory
+
 
 dim fileSystem, folderName, folder, fileCollection, regEx, renamedFile
 
@@ -34,3 +65,24 @@ for each objFile in fileCollection
     fileSystem.MoveFile objFile, folderName & "\" & renamedFile
 next 
 </pre>
+
+        </div>
+
+
+        <div style="width:22%;float:left;background-color:#EEEEEE; margin:10px; padding:10px;">
+            <div id="sidebar">
+                <!-- populated via javascript for quick and dirty consistent sidebar templating -->
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="clear"></div>
+
+    <footer>&copy; insane0hflex 2016</footer>
+
+    <script src="js/sidebar.js"></script>
+
+</body>
+</html>
