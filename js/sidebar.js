@@ -34,6 +34,7 @@ sidebarHTMLBuilder += "<h4>My GitHub Projects</h4>"
              + "<li><a href='lorem-ipsum-visual-studio-code-snippet.html'>Lorem Ipsum Visual Studio Code Snippet</a></li>"
              + "<li><a href='visual-studio-keybindings.html'>Visual Studio Keybindings/Keyboard Shortcuts</a></li>"
              + "<li><a href='90-days-of-commits.html'>90 days into A Year of a 'Git-Commit a Day'</a></li>"
+             + "<li><a href='file-name-char-replacer-for-web.html'>File name character replace for web</a></li>"
              + "</ul>"; //Last line
 
 
