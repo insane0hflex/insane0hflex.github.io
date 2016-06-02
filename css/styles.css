@@ -31,6 +31,19 @@ header > h1 {
     clear: both;
 }
 
+/* main body content */
+.content {
+    width:71%;float:left;margin-right:2%;
+}
+
+#sidebar {
+    width:22%;
+    float:left;
+    background-color:#EEEEEE;
+    margin:10px; 
+    padding:10px;
+}
+
 footer {
     clear: both;
     margin-top: 40px;
