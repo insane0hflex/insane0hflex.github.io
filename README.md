@@ -1,6 +1,6 @@
 # insane0hflex.github.io
 
-My user github page. It needs some Styling love.
+A simple user home/index page outlining some info about me. A personal blog of sorts.
 
 
 http://insane0hflex.github.io/
